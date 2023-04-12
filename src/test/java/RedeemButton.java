@@ -48,7 +48,7 @@ public class RedeemButton extends data{
     @Test
     public void redeemButton() throws InterruptedException {
         List<WebElement> inputLogin = driver.findElements(By.xpath("//input[@step='any']"));
-        inputLogin.get(0).sendKeys(login);
+        inputLogin.get(0).sendKeys(notValidLogin); /////
 
         List<WebElement> inputPassword = driver.findElements(By.xpath("//input[@step='any']"));
         inputPassword.get(1).sendKeys(password);
