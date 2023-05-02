@@ -58,7 +58,7 @@ public class data {
     final String textForCheckBlock = "a few seconds ago";
     final String bridgePage = "https://testnet-app.workquest.co/workers";
     final String wrongButtonRedeem = "Redeemed";
-    final String redeemButton = "Redeem";
+    final String redeemButton = "Redeem1";
     final String errorPriceMessage = "The price is required!";
     final String validPrice = "1";
     final String specializationErrorMessage = "The specialization is required!";
