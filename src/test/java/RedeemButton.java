@@ -39,7 +39,7 @@ public class RedeemButton extends data{
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    @AfterMethod(enabled = false)
+    @AfterMethod
     public void shutDown() {
         driver.close();
     }
