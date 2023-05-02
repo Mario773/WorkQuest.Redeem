@@ -39,7 +39,7 @@ public class RedeemButton extends data{
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    @AfterMethod
+    @AfterMethod(enabled = false)
     public void shutDown() {
         driver.close();
     }
@@ -117,6 +117,8 @@ public class RedeemButton extends data{
 
         WebElement closeNotificationAboutSuccessfully = driver.findElement(By.xpath("//button[@class='base-btn status__btn']"));
         closeNotificationAboutSuccessfully.click();
+
+        Thread.sleep(5_000);
 
         List<WebElement> checkButton = driver.findElements(By.xpath("//button[@type='submit']"));
         String text3 = checkButton.get(3).getText();
